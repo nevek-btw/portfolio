@@ -1,0 +1,30 @@
+---
+import HeaderFooterItem from "./FooterItem.astro";
+import GithubIcon from "../../icons/Github.astro";
+import TwitterIcon from "../../icons/TwitterIcon.astro";
+---
+
+<div class="max-[700px]:mt-4">
+    <div class="flex max-[700px]:flex-col items-center max-[700px]:items-start">
+        <div class="flex items-center gap-3">
+            <HeaderFooterItem
+                href="https://github.com/nevek-btw"
+                title="Github"
+            >
+                <GithubIcon />
+            </HeaderFooterItem>
+            <HeaderFooterItem
+                href="https://twitter.com/nevek_btw"
+                title="Twitter"
+            >
+                <TwitterIcon />
+            </HeaderFooterItem>
+        </div>
+        <a
+            href="https://astro.build/"
+            class="ml-auto cursor-pointer text-sm bg max-[700px]:ml-0 max-[700px]:mt-2 dark:text-neutral-200 bg-neutral-800 rounded-2xl px-2 p-[2px]"
+        >
+            Hecho con Astro
+        </a>
+    </div>
+</div>

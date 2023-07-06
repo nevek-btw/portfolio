@@ -1,0 +1,39 @@
+---
+import ItemProject from "./Project.astro";
+
+const projects = [
+    {
+        id: 1,
+        href: "https://github.com/nevek-btw/wifi-password",
+        title: "Wifi Password",
+        role: "Desarrollador Principal",
+        date: "JUN — JUL",
+        description:
+            "Este script en Python permite obtener las contraseñas de las redes Wi-Fi almacenadas en un sistema Windows. De manera fácil y segura, siempre teniendo en cuenta que estas son funciones de administrador. Ten en cuenta quién hará uso de ellas.",
+        links: [],
+        tags: ["Python", "WI-FI", "Comandos de Terminal", "Windows"],
+    },
+    {
+        id: 2,
+        href: "https://github.com/nevek-btw/bundle",
+        title: "Bundle",
+        role: "Desarrollador Principal",
+        date: "JUN - PRESENTE",
+        description:
+            "Bundle proporciona diferentes componentes visuales para mostrar esta información de manera organizada, como monitores de CPU y RAM, una lista de procesos y detalles de procesos individuales. La aplicación se ejecuta en un bucle principal que actualiza la información del sistema en intervalos regulares y también maneja eventos de teclado para permitir la interacción del usuario, como la selección de procesos o la salida de la aplicación.",
+        links: [],
+        tags: ["Rust", "RAM", "CPU", "Windows", "Comandos de Terminal"],
+    },
+];
+---
+
+<section id="projects" class="pt-24">
+    <div>
+        <h3
+            class="text-2xl font-semibold tracking-tight mb-3 pb-4 dark:text-purple-100/90 text-black/80"
+        >
+            Proyectos
+        </h3>
+        {projects.map((project) => <ItemProject {...project} />)}
+    </div>
+</section>

@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CursorShadow from "../components/CursorShadow.astro";
+import HomeSection from "../components/home/index.astro";
+import Header from "../components/header/index.astro";
+import AboutSection from "../components/about/index.astro";
+import ProjectSection from "../components/projects/index.astro";
+import SkillSection from "../components/skills/index.astro";
+import FooterSection from "../components/footer/index.astro";
+---
+
+<Layout title="Stalin | JavaScript Full Stack Developer">
+	<CursorShadow />
+	<div class="relative">
+		<HomeSection />
+		<div
+			id="content"
+			class="px-8 relative flex items-center max-w-[1100px] mx-auto md:page_center__diPtxZ"
+		>
+			<div class="h-full text-left max-w-full">
+				<div class="grid grid-cols-2 gap-2 h-full w-full">
+					<Header />
+					<div
+						class="col-span-1 max-[800px]:col-span-2 flex flex-col"
+					>
+						<AboutSection />
+						<ProjectSection />
+						<SkillSection />
+						<FooterSection />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style></style>

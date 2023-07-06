@@ -1,0 +1,14 @@
+<div
+    id="pointer"
+    class="pointer-events-none max-[800px]:hidden fixed top-0 left-0 inset-0 z-30 transition duration-300 max-[900px]:opacity-0"
+>
+</div>
+<script>
+    const pointer = document.getElementById("pointer");
+
+    function handleMouseMove(event) {
+        pointer.style.background = `radial-gradient(600px at ${event.clientX}px ${event.clientY}px, rgb(var(--shadow-cursor)), transparent 80%)`;
+    }
+
+    window.addEventListener("mousemove", handleMouseMove);
+</script>

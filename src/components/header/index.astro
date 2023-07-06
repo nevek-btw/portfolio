@@ -1,0 +1,33 @@
+---
+import Nav from "./Nav.astro";
+import Footer from "./Footer.astro";
+---
+
+<header
+    class="flex col-span-1 max-[800px]:col-span-2 top-0 h-screen max-[800px]:h-auto min-[800px]:sticky gap-3"
+>
+    <div class="h-full py-24 px-14 max-[800px]:px-2 flex-col flex">
+        <div class="flex flex-col gap-3">
+            <h1
+                class="font-bold text-[#1f1c19] dark:text-purple-100 relative item-s text-transparent text-6xl bg-clip-text inline-block text-gradient tracking-tighter"
+            >
+                Stalin
+            </h1>
+            <h2
+                class="dark:text-[#ada79f] text-[#6c6761] item-s text-transparent bg-clip-text tracking-tighter text-gradient text-xl"
+            >
+                Desarrollador Full Stack de JavaScript
+            </h2>
+            <p
+                class="w-96 max-[700px]:w-full opacity-80 dark:text-[#c8c6c0] text-[#302e2a] item-s text-transparent text-gradient bg-clip-text leading-5"
+            >
+                Como desarrollador Full Stack de JavaScript, he colaborado en
+                diversos proyectos, optimizando el rendimiento, creando
+                experiencias interactivas y entregando soluciones eficientes
+                para mejorar el flujo de trabajo.
+            </p>
+        </div>
+        <Nav />
+        <Footer />
+    </div>
+</header>
